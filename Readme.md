@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Евгений Васильев](https://up.htmlacademy.ru/htmlcss/30/user/1601933).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Зубко](https://htmlacademy.ru/profile/whatislove).
 
 ---
 
