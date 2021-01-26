@@ -8,9 +8,7 @@
 
 <body>
   <header>
-    <h1>
-      <a href="index.html">Техномарт</a>
-    </h1>
+    <a href="index.html">Техномарт</a>
     <input type="search" placeholder="Поиск:">
     <a href="#">
       Закладки: 0
@@ -57,31 +55,37 @@
     </section>
     <section>
       <h2>ПЕРФОРАТОРЫ</h2>
-    </section>
-    <section>
-      <span>ФИЛЬТР:</span>
-      <h2>ЦЕНА:</h2>
-      <!--тут будет ползунок цены-->
-      <input class="price-min" type="text" name="price-min" value="0">
-      <span>-</span>
-      <input class="price-max" type="text" name="price-min" value="0">
-      <h3>ПРОИЗВОДИТЕЛИ:</h3>
-      <input type="checkbox" name="firm1" id="ch1" value="Bosch">
-      <label for="ch1">BOSCH</label>
-      <input type="checkbox" name="firm1" id="ch2" value="ИНТЕРСКОЛ">
-      <label for="ch2">ИНТЕРСКОЛ</label>
-      <input type="checkbox" name="firm1" id="ch3" value="MAKITA">
-      <label for="ch3">MAKITA</label>
-      <input type="checkbox" name="firm1" id="ch4" value="DEWALT">
-      <label for="ch4">DeWALT</label>
-      <input type="checkbox" name="firm1" id="ch5" value="HITACHI">
-      <label for="ch5">HITACHI</label>
-      <h3>ПИТАНИЕ:</h3>
-      <input type="radio" name="supply" id="rd1" value="accumulator">
-      <label for="rd1">АККУМУЛЯТОРНЫЕ</label>
-      <input type="radio" name="supply" id="rd2" value="lan">
-      <label for="rd2">СЕТЕВЫН</label>
-      <button type="submit" class="btn-show">Показать</button>
+      <form action="#" method="get">
+        <span>ФИЛЬТР:</span>
+        <fieldset>
+          <legend>ЦЕНА:</legend>
+          <!--тут будет ползунок цены-->
+          <label><input type="text" value="100"></label>
+          <span>-</span>
+          <label><input type="text" value="600"></label>
+        </fieldset>
+        <fieldset>
+          <legend>ПРОИЗВОДИТЕЛИ:</legend>
+          <input type="checkbox" name="firm1" id="ch1" value="Bosch">
+          <label for="ch1">BOSCH</label>
+          <input type="checkbox" name="firm1" id="ch2" value="interskop">
+          <label for="ch2">ИНТЕРСКОЛ</label>
+          <input type="checkbox" name="firm1" id="ch3" value="MAKITA">
+          <label for="ch3">MAKITA</label>
+          <input type="checkbox" name="firm1" id="ch4" value="DEWALT">
+          <label for="ch4">DeWALT</label>
+          <input type="checkbox" name="firm1" id="ch5" value="HITACHI">
+          <label for="ch5">HITACHI</label>
+        </fieldset>
+        <fieldset>
+          <legend>ПИТАНИЕ:</legend>
+          <input type="radio" name="supply" id="rd1" value="accumulator">
+          <label for="rd1">АККУМУЛЯТОРНЫЕ</label>
+          <input type="radio" name="supply" id="rd2" value="lan">
+          <label for="rd2">СЕТЕВЫН</label>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <span>СОРТИРОВКА:</span>
@@ -155,8 +159,6 @@
           <a href="#">25500 Р.</a>
         </li>
       </ul>
-    </section>
-    <section>
       <ul>
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -170,62 +172,43 @@
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
     </section>
-
   </main>
   <footer>
-    <section>
-
-      <h2>
-        <a href="#">Техномарт</a>
-      </h2>
-      <p>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55
-      </p>
-    </section>
-    <section>
-
-      <ul>
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </section>
-    <section>
-      <ul>
-        <li><a href="#">Материал</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредлжения</a></li>
-      </ul>
-    </section>
-    <section>
-      <p>
-        © 2010-2016 Компания «Техномарт»<br>
-        Все права защищены
-      </p>
-    </section>
-    <section>
-      <ul>
-        <li>
-          <a href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <p>Обратная связь:</p><br>
-      <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </section>
-    <section>
-      <p>Разработано — </p><br>
-      <a href=" htmlacademy.ru"> htmlacademy.ru</a>
-    </section>
+    <a href="#">Техномарт</a>
+    <p>
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      +7 (812) 555-05-55
+    </p>
+    <ul>
+      <li><a href="#">Компания</a></li>
+      <li><a href="#">Новости</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li><a href="#">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Материал</a></li>
+      <li><a href="#">Техника</a></li>
+      <li><a href="#">Инструмент</a></li>
+      <li><a href="#">Спецпредлжения</a></li>
+    </ul>
+    <p>
+      © 2010-2016 Компания «Техномарт»<br>
+      Все права защищены
+    </p>
+    <ul>
+      <li>
+        <a href="#">Вконтакте</a>
+      </li>
+      <li>
+        <a href="#">Фейсбук</a>
+      </li>
+      <li>
+        <a href="#">Инстаграм</a>
+      </li>
+    </ul>
+    <p>Обратная связь:</p><br>
+    <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    <p>Разработано — </p><br>
+    <a href="htmlacademy.ru"> htmlacademy.ru</a>
   </footer>
