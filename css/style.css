@@ -1,0 +1,353 @@
+/* Variables */
+:root {
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --basic-white: #ffffff;
+  --special-ylellow: #FFBF47;
+  --success: #5FBB2D;
+  --error: #BA2732;
+  --basic-black: #000000;
+  --special: #663d15;
+  --focus-nav: #293449;
+  --address: #32425C;
+  --basic-blue: #3BBCE3;
+  --basic-purple: #DC91D8;
+  --green: #8ED78F;
+  --ylellow: #FFC047;
+  --special-gray: #F9F5F0;
+  --old-price: #A9A9A9;
+  --gold: #FFD180;
+  --focus-button: #CA2C37;
+}
+
+/* Global */
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-background);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+h2 {
+  Font family: Cuprum;
+  Font style: Regular;
+  Font size: 30px;
+  Line height: 30px;
+}
+
+.first-section {
+  background-color: var(--basic-background);
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  background-color: var(--basic-grey);
+}
+
+.navigation {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.color-nav {
+  color: var(--basic-white);
+}
+
+.main-navigation a,
+.catalog-list a,
+.list-orders a {
+  color: var(--basic-white);
+}
+
+/* header */
+.search {
+  Font family: Cuprum;
+  Font style: Regular;
+  Font size: 18px;
+  Line height: 24px;
+  background-color: var(--focus-nav);
+}
+
+.list-orders {
+  Font family: Cuprum;
+  Font style: Regular;
+  Font size: 18px;
+  Line height: 24px;
+  color: var(--basic-white);
+  background-color: var(--focus-nav);
+  list-style: none;
+}
+
+.ordering {
+  background-color: var(--basic-green);
+}
+
+.title {
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.telephone {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  text-align: center;
+}
+
+.address {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--address);
+  text-align: center;
+}
+
+.user-navigation {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  text-align: right;
+}
+
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+/*main*/
+
+
+.catalog-item h2{
+  font-family: Cuprum;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+color: var(--basic-white)
+
+}
+.material {
+  background-color: var(--special-ylellow);
+}
+
+.tools {
+  background-color: var(--basic-blue);
+}
+
+.tech {
+  background-color: var(--basic-purple);
+}
+
+.sales {
+  background-color: var(--green);
+}
+
+.deliver {
+  background-color: var(--ylellow);
+}
+.catalog-slide{
+  background-image: url("../img/true-man.jpg");
+   background-repeat: no-repeat;
+}
+
+.popular-staff {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--special-gray);
+}
+
+.drill-title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black)
+}
+
+.old-price {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--old-price);
+}
+
+.buy-button {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.firms-list,
+.drill-list {
+  list-style: none;
+}
+
+.popular-firms-section,
+.popular-product-section {
+  background-color: var(--basic-white);
+}
+
+.about-item {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.button-toogle {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--address);
+}
+
+.deliv {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--address);
+  text-transform: uppercase;
+}
+
+.section-about {
+  background-color: var(--basic-white);
+}
+
+/*Footer*/
+.section-footer-first {
+  background-color: var(--address);
+}
+
+.section-footer-second {
+  background-color: var(--focus-nav);
+}
+
+.color-nav-footer a {
+  color: var(--basic-background);
+}
+
+.color-nav-footer-second a {
+  color: var(--gold);
+}
+
+.address-footer {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-background);
+}
+
+.socials {
+  list-style: none;
+  text-align: center;
+}
+
+.copiright,
+.feedback, {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+.copiright,
+.lead{
+    color: var(--basic-white);
+}
+.adress-mail{
+  color: var(--gold);
+}
+
+/*modal*/
+.modal{
+  color: var(--basic-black);
+ background-color: var(--basic-white);
+ background-position: 0 0;
+ background-repeat: repeat;
+ box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+/*buttons sittings*/
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--focus-button);
+}
+.nav-button:hover,
+.nav-button:focus,
+.nav-button:active{
+    background-color: var(--focus-nav);
+}
+
+.button {
+  Font family: Cuprum;
+  Font style: Regular;
+  Font size: 14px;
+  Line height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.catalog-button{
+  font-family: Cuprum;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+}
