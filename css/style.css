@@ -40,6 +40,7 @@ body {
 a {
   text-decoration: none;
 
+
 }
 
 img {
@@ -49,12 +50,17 @@ img {
 
 .main-navigation {
   background-color: var(--basic-grey);
+  list-style: none;
+  color: var(--basic-white);
+
 }
 
 .navigation {
   text-decoration: none;
-}
+  list-style: none;
 
+}
+.color-staff,
 .color-nav {
   color: var(--basic-white);
 }
@@ -127,6 +133,11 @@ img {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-white)
+
+}
+.catalog-list{
+  list-style: none;
+
 }
 
 .material {
@@ -159,6 +170,14 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   background-color: var(--special-gray);
+}
+.title-popular {
+  font-family: Cuprum;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+color: var(--basic-white);
 }
 
 .drill-title {

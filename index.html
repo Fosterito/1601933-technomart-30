@@ -28,15 +28,15 @@
     <p class="title">Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта</p>
-    <p class="telephone">+7 (812) 555-05-55</p>
+    <a class="telephone" href="tel:+78125550255">+7 (812) 555-05-55</a>
     <p class="address">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     </p>
     <div class="user-navigation">
-      <a class="login-link" href="#">
+      <a href="#">
         Войти
       </a>
-      <a class="registration-link" href="#">
+      <a href="#">
         Регистрация
       </a>
     </div>
@@ -52,8 +52,8 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="catalog-section">
+  <main>
+    <section>
       <ul class="catalog-list">
         <li class="catalog-item material">
           <h2>Материалы</h2>
@@ -76,8 +76,8 @@
           <a class="catalog-button" href="#">БЕСПЛАТНО</a>
         </li>
         <li class="catalog-slide">
-          <h2>ПЕРФОРАТОРЫ</h2>
-          <span>Настоящие мужские игрушки</span>
+          <h2 class="title-popular">ПЕРФОРАТОРЫ</h2>
+          <span class="color-staff">Настоящие мужские игрушки</span>
           <button type="button" name="slide" disabled></button>
           <button type="button" name="slide"></button>
           <a class="button" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
@@ -85,12 +85,12 @@
         </li>
       </ul>
     </section>
-    <section class="popular-product">
+    <section>
       <div class="popular-staff">
         <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
         <a class="button" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
       </div>
-      <ul class="drill-list">
+      <ul>
         <li class="drill-item">
           <img class="drill-img" src="img/perfor1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           <h3 class="drill-title">Перфоратор BOSCH BFG 9000</h3>
@@ -136,11 +136,11 @@
         <li><a href="#"><img src="img/partners8.png" width="220" height="145" alt="METABO"></a></li>
       </ul>
     </section>
-    <section class="service-section">
+    <section>
       <h2>СЕРВИСЫ</h2>
       <p class="about-item">Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul class="service-toggle">
+      <ul class=>
         <li class="button-toogle"><label for="button-1">Доставка</label></li>
         <li class="button-toogle"><label for="button-2">Гарантия</label></li>
         <li class="button-toogle"><label for="button-3">Кредит</label></li>
@@ -154,22 +154,22 @@
       </p>
     </section>
     <div class="section-about">
-      <section class="section-company">
+      <section>
         <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
         <p class="about-item">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
           строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
         <p></p>
         <p class="about-item">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
-        <ul class="info-list">
-          <li class="info-item">Деловые линии</li>
-          <li class="info-item">Автотрейдинг</li>
-          <li class="info-item">ЖелДорЭкспедиция</li>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
         <a class="button" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
       </section>
 
-      <section class="section-contacts">
+      <section>
         <h2>КОНТАКТЫ</h2>
         <p class="about-item">Вы можете забрать товар сами,<br>
           заехав в наш офис.</p>
@@ -180,7 +180,7 @@
   </main>
   <footer class="main-footer">
     <div class="section-footer-first">
-      <a class="logo-footer" href="#"><img src="img/semi-logo.svg" width="220" height="68" alt="Логотив Техномарт"></a>
+      <a href="#"><img src="img/semi-logo.svg" width="220" height="68" alt="Логотив Техномарт"></a>
       <address class="address-footer">
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55
@@ -206,13 +206,13 @@
       </p>
       <ul class="socials">
         <li>
-          <a class="socials-button-vk" href="#"><img src="img/icon-vk.svg" alt="VK"></a>
+          <a href="#"><img src="img/icon-vk.svg" alt="VK"></a>
         </li>
         <li>
-          <a class="socials-button-facebook" href="#"><img src="img/icon-fb.svg" alt="FB"></a>
+          <a href="#"><img src="img/icon-fb.svg" alt="FB"></a>
         </li>
         <li>
-          <a class="socials-button-inst" href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM"></a>
+          <a href="#"><img src="img/icon-insta.svg" alt="INSTAGRAM"></a>
         </li>
       </ul>
       <div class="feedback">
@@ -230,11 +230,11 @@
         <input id="name-feedback" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for="email-feedback">Ваш e-mail:</label>
+        <label>Ваш e-mail:</label>
         <input id="mail-feedback" type="email" name="email" placeholder="email@example.com">
       </p>
       <p>
-        <label for="text-feedback">Текст письма:</label>
+        <label>Текст письма:</label>
         <textarea name="text-feedback" rows="8" cols="80" placeholder="В свободной форме"></textarea>
       </p>
       <a class="button" href="#">ОТПРАВИТЬ</a>
