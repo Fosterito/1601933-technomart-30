@@ -39,7 +39,7 @@ body {
 
 a {
   text-decoration: none;
-  list-style: none;
+
 }
 
 img {
@@ -67,12 +67,12 @@ img {
 
 /* header */
 .search {
-  Font style: Regular;
+  font-style: normal;
   background-color: var(--focus-nav);
 }
 
 .list-orders {
-  Font style: Regular;
+  font-style: normal;
   color: var(--basic-white);
   background-color: var(--focus-nav);
   list-style: none;
@@ -121,7 +121,7 @@ img {
 
 /*main*/
 .catalog-item h2 {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -291,9 +291,9 @@ img {
 }
 
 .button {
-  Font style: Regular;
-  Font size: 14px;
-  Line height: 18px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
