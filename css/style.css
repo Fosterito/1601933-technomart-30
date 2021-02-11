@@ -71,6 +71,7 @@ img {
 .title {
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 /* header */
@@ -174,7 +175,7 @@ img {
 }
 
 .title-popular {
-  font-family: Cuprum;
+  font-family: "Cuprum";
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -183,7 +184,7 @@ img {
 }
 
 .drill-title {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -192,7 +193,7 @@ img {
 }
 
 .old-price {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -201,7 +202,7 @@ img {
 }
 
 .buy-button {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -221,7 +222,7 @@ img {
 }
 
 .about-item {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -325,7 +326,7 @@ img {
 }
 
 .filter-button {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   list-style: none;
@@ -336,7 +337,7 @@ img {
 }
 
 .pagination-active {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-white);
@@ -344,7 +345,7 @@ img {
 }
 
 .pagination-none {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black)
@@ -357,7 +358,7 @@ img {
 }
 
 .filter-show {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   background-color: var(--basic-white);
@@ -370,12 +371,12 @@ img {
 }
 
 .form {
-  border: 0 none;
+  border: none;
   text-align: left;
 }
 
 .catalog-title {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   list-style: none;
@@ -394,14 +395,14 @@ img {
 }
 
 .filter-title {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   list-style: none;
 }
 
 .filter-heading {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -409,14 +410,14 @@ img {
 }
 
 .filter-price {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
   background-color: var(--basic-background);
 }
 
 .filter-item {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-size: 15px;
   line-height: 19px;
 }
