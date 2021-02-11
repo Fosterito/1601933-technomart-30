@@ -318,6 +318,7 @@ img {
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  text-transform: uppercase;
 }
 
 .catalog-button {
@@ -330,6 +331,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .filter-button a {
@@ -380,6 +382,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .catalog-title a {
@@ -399,6 +402,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   list-style: none;
+  text-transform: uppercase;
 }
 
 .filter-heading {
@@ -420,6 +424,7 @@ img {
   font-family: "PT Sans";
   font-size: 15px;
   line-height: 19px;
+  text-transform: uppercase;
 }
 
 .pagination {
