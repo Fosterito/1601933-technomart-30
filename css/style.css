@@ -39,8 +39,6 @@ body {
 
 a {
   text-decoration: none;
-
-
 }
 
 img {
@@ -52,14 +50,13 @@ img {
   background-color: var(--basic-grey);
   list-style: none;
   color: var(--basic-white);
-
 }
 
 .navigation {
   text-decoration: none;
   list-style: none;
-
 }
+
 .color-staff,
 .color-nav {
   color: var(--basic-white);
@@ -69,6 +66,12 @@ img {
 .catalog-list a,
 .list-orders a {
   color: var(--basic-white);
+}
+
+.title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 /* header */
@@ -88,7 +91,7 @@ img {
   background-color: var(--basic-green);
 }
 
-.title {
+.title-header {
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -133,11 +136,10 @@ img {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-white)
-
 }
-.catalog-list{
-  list-style: none;
 
+.catalog-list {
+  list-style: none;
 }
 
 .material {
@@ -171,17 +173,18 @@ img {
   color: var(--basic-black);
   background-color: var(--special-gray);
 }
+
 .title-popular {
-  font-family: Cuprum;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 36px;
-color: var(--basic-white);
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-white);
 }
 
 .drill-title {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -190,7 +193,7 @@ color: var(--basic-white);
 }
 
 .old-price {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -199,7 +202,7 @@ color: var(--basic-white);
 }
 
 .buy-button {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -219,7 +222,7 @@ color: var(--basic-white);
 }
 
 .about-item {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -315,9 +318,115 @@ color: var(--basic-white);
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  text-transform: uppercase;
 }
 
 .catalog-button {
   font-size: 14px;
   line-height: 18px;
+}
+
+.filter-button {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.filter-button a {
+  color: var(--old-price);
+}
+
+.pagination-active {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.pagination-none {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black)
+}
+
+.filter-button:hover a,
+.filter-button:focus a,
+.filter-button:active a {
+  color: var(--basic-red);
+}
+
+.filter-show {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  border: 1px solid #E5E5E5;
+}
+
+/*Catalog main*/
+.main-catalog {
+  background-color: var(--basic-white);
+}
+
+.form {
+  border: none;
+  text-align: left;
+}
+
+.catalog-title {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.catalog-title a {
+  color: var(--basic-black);
+}
+
+.basic-background {
+  background-color: var(--basic-background);
+}
+
+.sorting {
+  background-color: var(--special-gray);
+}
+
+.filter-title {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.filter-heading {
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter-price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 18px;
+  background-color: var(--basic-background);
+}
+
+.filter-item {
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  list-style: none;
 }
