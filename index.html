@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,22 +9,24 @@
   <link rel="icon" href="img/favicon-small.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon180.png">
   <link rel="manifest" href="manifest.webmanifest">
-
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <a href="index.html"><img src="img/main-logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
-    <input class="search" type="search" placeholder="Поиск:">
+<body class="page-body">
+  <header class="main-header">
+    <div class="background-nav">
+    <a class="main-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
+    <input class="background-nav" type="search" placeholder="Поиск:">
     <ul class="list-orders">
       <li><a class="bookmarks" href="#">Закладки:0<a></li>
       <li><a class="basket" href="#">Корзина: 0</a></li>
       <li><a class="ordering" href="#">Оформить заказ</a></li>
     </ul>
+  </div>
+    <div class="whaper-nav-down background">
     <p class="title-header">Интернет-магазин<br>
       строительных материалов<br>
       и инструментов для ремонта</p>
@@ -50,9 +52,10 @@
         <li class="nav-button"><a href="#">Контакты</a></li>
       </ul>
     </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="container">
     <section>
       <ul class="catalog-list">
         <li class="catalog-item material">
@@ -67,6 +70,13 @@
           <h2>Техника</h2>
           <a class="catalog-button" href="#">Для стройки</a>
         </li>
+        <li class="catalog-slide">
+          <h2 class="title-popular">Перфораторы</h2>
+          <span class="color-staff">Настоящие мужские игрушки</span>
+          <button type="button" name="slide" disabled></button>
+          <button type="button" name="slide"></button>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+          </div>
         <li class="catalog-item sales">
           <h2>Скидка 50%</h2>
           <a class="catalog-button" href="#">А 350 товаров</a>
@@ -75,14 +85,6 @@
           <h2>ДОСТАВКА</h2>
           <a class="catalog-button" href="#">Бесплатно</a>
         </li>
-        <li class="catalog-slide">
-          <h2 class="title-popular">Перфораторы</h2>
-          <span class="color-staff">Настоящие мужские игрушки</span>
-          <button type="button" name="slide" disabled></button>
-          <button type="button" name="slide"></button>
-          <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
-        </li>
       </ul>
     </section>
     <section>
@@ -90,7 +92,7 @@
         <h2 class="title">Популярные товары:</h2>
         <a class="button" href="#">Все популярные товары</a>
       </div>
-      <ul>
+      <ul class="drill-list">
         <li class="drill-item">
           <img class="drill-img" src="img/perfor1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
           <h3 class="drill-title">Перфоратор BOSCH BFG 9000</h3>
@@ -126,14 +128,14 @@
         <a class="button" href="#">Все производители</a>
       </div>
       <ul class="firms-list">
-        <li><a href="#"><img src="img/partners1.png" width="220" height="145" alt="BOSCH"></a></li>
-        <li><a href="#"><img src="img/partners2.png" width="220" height="145" alt="MAKITA"></a></li>
-        <li><a href="#"><img src="img/partners3.png" width="220" height="145" alt="DeWALT"></a></li>
-        <li><a href="#"><img src="img/partners4.png" width="220" height="145" alt="ИНТРЕСКОЛ"></a></li>
-        <li><a href="#"><img src="img/partners5.png" width="220" height="145" alt="HITACHI"></a></li>
-        <li><a href="#"><img src="img/partners6.png" width="220" height="145" alt="LG"></a></li>
-        <li><a href="#"><img src="img/partners7.png" width="220" height="145" alt="AEG"></a></li>
-        <li><a href="#"><img src="img/partners8.png" width="220" height="145" alt="METABO"></a></li>
+        <li class=""><a href="#"><img src="img/partners1.png" width="220" height="145" alt="BOSCH"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners2.png" width="220" height="145" alt="MAKITA"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners3.png" width="220" height="145" alt="DeWALT"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners4.png" width="220" height="145" alt="ИНТРЕСКОЛ"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners5.png" width="220" height="145" alt="HITACHI"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners6.png" width="220" height="145" alt="LG"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners7.png" width="220" height="145" alt="AEG"></a></li>
+        <li class="firms-item"><a href="#"><img src="img/partners8.png" width="220" height="145" alt="METABO"></a></li>
       </ul>
     </section>
     <section>
@@ -234,7 +236,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal" hidden="true">
     <form class="feedback-form" action="index.html" method="post">
       <p>
         <label for="name-feedback">Ваше имя:</label>
@@ -251,4 +253,5 @@
       <a class="button" href="#">Отправить</a>
     </form>
   </section>
+
 </body>
