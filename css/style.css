@@ -24,7 +24,7 @@
 }
 
 /* Global */
-.page-body {
+body {
   font-family: "Cuprum";
   font-size: 18px;
   font-style: normal;
@@ -457,6 +457,17 @@ img {
 
 .pagination {
   list-style: none;
+}
+
+.drill-list-catalog{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-gap: 20px;
+  padding: 0;
+  margin: 0;
+
 }
 
 /*Grid*/
