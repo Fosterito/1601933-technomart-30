@@ -77,6 +77,9 @@ img {
 }
 
 /* header */
+
+
+
 .background-nav {
   background-color: var(--address);
 }
@@ -90,8 +93,12 @@ img {
   flex-direction: row;
   justify-content: center;
   background-color: var(--focus-nav);
-  max-height: 42px;
 }
+
+.main-logo {
+  line-height: 0;
+}
+
 
 .search {
   position: relative;
@@ -131,6 +138,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 38px;
 }
 
 .title-header {
@@ -140,12 +148,14 @@ img {
   line-height: 23px;
   color: var(--basic-red);
   padding-left: 30px;
+  margin: 0;
 }
 
 .address-block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 16px;
 }
 
 .telephone {
@@ -156,7 +166,6 @@ img {
   line-height: 30px;
   border: 3px solid #FFFFFF;
   color: var(--basic-red);
-  margin-top: 48px;
 }
 
 .address {
@@ -164,6 +173,8 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: var(--address);
+  margin: 0;
+  pa
 }
 
 .address-list {
@@ -176,6 +187,7 @@ img {
   display: flex;
   flex-direction: row;
   list-style: none;
+  padding-bottom: 8px;
 }
 
 .login {
@@ -217,9 +229,11 @@ img {
 }
 
 /*main*/
-.main-container {
+
+.main-container{
   padding-top: 59px;
 }
+
 
 .catalog-list {
   display: grid;
@@ -376,6 +390,8 @@ img {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+  margin: 0;
+  padding-bottom: 68px;
 }
 
 .button-toogle {
@@ -391,7 +407,9 @@ img {
   line-height: 30px;
   color: var(--address);
   text-transform: uppercase;
+  padding: 29px 0 30px 29px;
 }
+
 
 .drill-item {
   display: flex;
@@ -515,6 +533,7 @@ img {
 
 .lead {
   color: var(--basic-white);
+  margin: 0;
 }
 
 /*modal*/
@@ -559,26 +578,27 @@ img {
   line-height: 18px;
   list-style: none;
   text-transform: uppercase;
+  padding-right: 70px;
 }
 
 .filter-button a {
   color: var(--old-price);
 }
 
-.pagination-active {
+.pagination-button {
+  display: block;
+  margin-left: 10px;
+  padding: 10px 15px 10px 15px;
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
+  color: var(--basic-black);
+  border: 1px solid #E5E5E5;
+}
+.pagination-none{
+  margin-left: 0;
 }
 
-.pagination-none {
-  font-family: "PT Sans";
-  font-size: 13px;
-  line-height: 18px;
-  color: var(--basic-black)
-}
 
 .filter-button:hover a,
 .filter-button:focus a,
@@ -587,6 +607,7 @@ img {
 }
 
 .filter-show {
+  margin-top: 30px;
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
@@ -626,12 +647,19 @@ img {
   text-align: left;
 }
 
+.catalog-list-second{
+  display: flex;
+  flex-direction: row;
+  padding-top: 21px;
+}
+
 .catalog-title {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   list-style: none;
   text-transform: uppercase;
+  padding-left: 40px;
 }
 
 .catalog-title a {
@@ -646,12 +674,27 @@ img {
   background-color: var(--special-gray);
 }
 
+.drill-title-sotring{
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: var(--special-gray);
+  padding: 10px 0 10px 20px;
+
+}
+
 .filter-title {
   font-family: "PT Sans";
   font-size: 13px;
   line-height: 18px;
   list-style: none;
   text-transform: uppercase;
+  padding: 10px 0 10px 18px;
+  margin: 0;
+  background-color: var(--special-gray);
 }
 
 .filter-heading {
@@ -660,13 +703,50 @@ img {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 12px;
 }
 
 .filter-price {
   font-family: "PT Sans";
   font-size: 17px;
   line-height: 18px;
-  background-color: var(--basic-background);
+  background-color: var(--special-gray);
+}
+
+.filter-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.input-class{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 95px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: var(--special-gray);
+}
+
+.firms-check-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-item {
@@ -676,7 +756,37 @@ img {
 }
 
 .pagination {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   list-style: none;
+}
+
+.catalog-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sorting{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.filter-buttons-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.drill-container{
+  padding-left: 20px;
 }
 
 .drill-list-catalog {
@@ -687,4 +797,9 @@ img {
   grid-gap: 20px;
   padding: 0;
   margin: 0;
+  padding-top: 28px;
+}
+
+.title-catalog{
+  padding-top: 64px;
 }
