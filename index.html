@@ -19,7 +19,7 @@
   <header class="basic-background">
     <div class="nav-up">
       <a class="main-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
-      <input class="background-nav search" type="search" placeholder="Поиск:">
+      <input class="search" type="search" placeholder="Поиск:">
       <a class="bookmarks" href="#">Закладки: 0</a>
       <a class="basket" href="#">Корзина: 0</a>
       <a class="ordering" href="#">Оформить заказ</a>
@@ -42,13 +42,13 @@
         </div>
       </div>
       <nav class="main-navigation">
-        <ul class="navigation color-nav">
-          <li class="nav-button"><a href="index.html">Главная</a></li>
-          <li class="nav-button"><a href="#">Компания</a></li>
-          <li class="nav-button"><a href="#">Каталог</a></li>
-          <li class="nav-button"><a href="#">Спецпредложения</a></li>
-          <li class="nav-button"><a href="#">Доставка</a></li>
-          <li class="nav-button"><a href="#">Контакты</a></li>
+        <ul class="navigation">
+          <li><a class="nav-button" href="index.html">Главная</a></li>
+          <li><a class="nav-button" href="#">Компания</a></li>
+          <li><a class="nav-button" href="catalog.html">Каталог</a></li>
+          <li><a class="nav-button" href="#">Спецпредложения</a></li>
+          <li><a class="nav-button" href="#">Доставка</a></li>
+          <li><a class="nav-button" href="#">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -95,7 +95,7 @@
     <section class="wrapper">
       <div class="popular-staff">
         <h2 class="title">Популярные товары:</h2>
-        <a class="button" href="#">Все популярные товары</a>
+        <a class="button button-title" href="#">Все популярные товары</a>
       </div>
       <ul class="drill-list">
         <li class="drill-item">
@@ -138,7 +138,7 @@
     <section class="popular-firms wrapper">
       <div class="popular-staff">
         <h2 class="title">Популярные производители:</h2>
-        <a class="button" href="#">Все производители</a>
+        <a class="button button-title" href="#">Все производители</a>
       </div>
       <ul class="firms-list">
         <li class=""><a href="#"><img src="img/partners1.png" width="220" height="145" alt="BOSCH"></a></li>
@@ -153,51 +153,49 @@
     </section>
     <section class="basic-background">
       <div class="wrapper section-about">
-        <div class="title-about">
         <h2 class="title">Сервисы</h2>
-        <p class="about-item">Хороший интернет-магазин отличается от плохого не только ценами!<br>
+        <p class="about-item about-item-service">Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      </div>
-      <div class="section-down">
-        <ul class="button-list">
-          <li class="button-toogle"><label for="button-1">Доставка</label></li>
-          <li class="button-toogle"><label for="button-2">Гарантия</label></li>
-          <li class="button-toogle"><label for="button-3">Кредит</label></li>
-        </ul>
-        <div class="title-about">
-          <h2 class="service-title">Доставка</h2>
-          <p class="about-item">
-            Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!
-          </p>
+        <div class="section-down">
+          <ul class="button-list">
+            <li class="button-toogle"><label for="button-1">Доставка</label></li>
+            <li class="button-toogle"><label for="button-2">Гарантия</label></li>
+            <li class="button-toogle"><label for="button-3">Кредит</label></li>
+          </ul>
+          <div class="title-deliv">
+            <h2 class="service-title">Доставка</h2>
+            <p class="about-item">
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="wrapper section-about-too">
-      <div class="block">
+    <section class="wrapper section-about-second">
+      <div class="element-about">
         <h2 class="title">Компания «ТЕХНОМАРТ»</h2>
-        <p class="about-item">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-          строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+        <p class="about-item">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br> ремонта и
+          строительства не оставит равнодушными любителей сэкномить на<br>
+          гастарбайтерах.</p>
         <p></p>
         <p class="about-item">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="service-tips">
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <a class="button" href="#">Подробнее о компании</a>
       </div>
-      <div class="block">
+      <div class="element-about">
         <h2 class="title">Контакты</h2>
         <p class="about-item">Вы можете забрать товар сами,<br>
           заехав в наш офис.</p>
         <a href="#">тут будет карта</a>
         <a class="button" href="#">Заблудились? напишите нам</a>
-      </div>
       </div>
     </section>
   </main>
@@ -214,7 +212,7 @@
           </div>
           <nav class="nav-footer-list">
             <ul class="navigation-footer-first">
-              <li class="nav-button-footer-"><a href="#">Компания</a></li>
+              <li class="nav-button-footer"><a href="#">Компания</a></li>
               <li class="nav-button-footer"><a href="#">Новости</a></li>
               <li class="nav-button-footer"><a href="#">Каталог</a></li>
               <li class="nav-button-footer"><a href="#">Доставка</a></li>
