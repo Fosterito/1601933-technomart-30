@@ -110,19 +110,18 @@ img {
   background-position: center left 19px;
 }
 
-.search::placeholder{
+.search::placeholder {
   color: var(--basic-white);
 }
 
-.search:focus::placeholder{
-    color: var(--basic-black);
+.search:focus::placeholder {
+  color: var(--basic-black);
 }
 
 .search:focus {
   background-color: var(--basic-white);
   background-image: url("../img/icon-search-red.svg");
 }
-
 
 .bookmarks {
   position: relative;
@@ -382,11 +381,10 @@ img {
 
 .material {
   background-color: var(--special-ylellow);
-  background-image: url("../img/icon-1.svg"),url("../img/new-flag.svg");
+  background-image: url("../img/icon-1.svg"), url("../img/new-flag.svg");
   background-repeat: no-repeat;
-  background-position: center right 32px,top right;
+  background-position: center right 32px, top right;
 }
-
 
 .tools {
   background-color: var(--basic-blue);
@@ -446,7 +444,6 @@ img {
   background: rgba(0, 0, 0, .3);
 }
 
-
 .slide-elements {
   display: flex;
   flex-direction: column;
@@ -476,11 +473,11 @@ img {
   justify-content: space-between;
 }
 
-.slider-button-back{
+.slider-button-back {
   padding-left: 25px;
 }
 
-.slider-button-next{
+.slider-button-next {
   padding-right: 20px;
 }
 
@@ -593,10 +590,11 @@ img {
 }
 
 .firms-item:hover,
-.firms-item:focus{
+.firms-item:focus {
   box-shadow: 0 10px 25px rgba(41, 52, 73, .5)
 }
-.firms-item:active{
+
+.firms-item:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, .5);
   opacity: .3
 }
@@ -656,7 +654,7 @@ img {
   height: 318px;
 }
 
-.new-product{
+.new-product {
   background-image: url("../img/new-flag.svg");
   background-repeat: no-repeat;
   background-position: right top;
@@ -855,8 +853,6 @@ img {
   padding-top: 37px;
   margin: 0;
 }
-
-
 
 .navigation-footer-first a {
   color: var(--basic-background);
