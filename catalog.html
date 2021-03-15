@@ -21,7 +21,7 @@
       <a class="main-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
       <input class="search" type="search" placeholder="Поиск:">
       <a class="bookmarks" href="#">Закладки: 0</a>
-      <a class="basket" href="#">Корзина: 0</a>
+      <a class="basket active-basket" href="#">Корзина: 10</a>
       <a class="ordering" href="#">Оформить заказ</a>
     </div>
     </div>
@@ -73,7 +73,13 @@
             <p class="filter-title">Фильтр:</p>
             <fieldset class="form">
               <legend class="filter-heading">Цена:</legend>
-              <!--тут будет ползунок цены-->
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle-min"></div>
+                <div class="toggle-max"></div>
+              </div>
               <div class="input-price">
                 <label><input class="input-class" type="number" value="0"></label>
                 <span>-</span>
