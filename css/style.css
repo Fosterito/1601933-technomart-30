@@ -81,6 +81,10 @@ img {
   max-width: 190px;
 }
 
+.visual-hidden{
+  display: none;
+}
+
 /* header */
 .background-nav {
   background-color: var(--address);
@@ -516,10 +520,89 @@ img {
 }
 
 .catalog-slide {
+  position: relative;
   grid-column: 1/3;
   grid-row: 2/4;
   background-image: url("../img/true-man.jpg");
 }
+
+.catalog-slide input {
+  position: absolute;
+  opacity: 0;
+}
+
+.arrow-left::before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  left: 22px;
+  top: 123px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.arrow-left::after {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 140px;
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  cursor: pointer;
+  left: 22px;
+  transform: rotate(45deg);
+}
+
+.arrow-right::before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 140px;
+  display: block;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  cursor: pointer;
+  right: 17px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.arrow-right::after {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 140px;
+  display: block;
+  right: 17px;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  cursor: pointer;
+  top: 123px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.slider-buttons label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  vertical-align: top;
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 
 .catalog-button {
   display: flex;
@@ -565,9 +648,14 @@ img {
 }
 
 .slider-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  position: absolute;
+  z-index: 60;
+  bottom: 14%;
+  left: 45%;
+  width: 60px;
+  height: 10px;
+  text-align: center;
+}
 }
 
 .slider-button-back {
@@ -1055,7 +1143,6 @@ img {
 
 /*modal*/
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1066,12 +1153,11 @@ img {
   height: 430px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  border-top: 7px solid #ee3643;
+  border-top: 7px solid var(--basic-red);
   box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .modal-map {
-  display: none;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1085,6 +1171,31 @@ img {
 
 .modal-map iframe {
   border: none;
+}
+
+.modal-catalog{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 620px;
+  height: 282px;
+  background-color: var(--basic-white);
+  border-top: 7px solid var(--basic-red);
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: top 53px left 81px;
+}
+
+.modal-title{
+  margin: 0;
+  text-align: center;
+  padding-top: 73px;
 }
 
 .modal input,
@@ -1151,10 +1262,64 @@ img {
   min-width: 460px;
 }
 
-.modal-close-button {
-  position: absolute;
-  right: 11px;
-  top: 21px;
+.modal-button-catalog-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--modal-bg);
+  padding-top: 37px;
+  padding-bottom: 37px;
+
+}
+
+.modal-button-catalog{
+  display: flex;
+  min-width: 192px;
+  min-height: 38px;
+  justify-content: center;
+  align-items: center;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  margin-left: 10px;
+}
+
+.modal-button-catalog:active{
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.modal-close-button{
+  padding: 0;
+  border: none;
+}
+
+.modal-close-button::before{
+  content: '';
+position: absolute;
+top: 15px;
+right: 15px;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+width: 20px;
+height: 5px;
+background: #ee3643;
+border: none;
+cursor: pointer;
+}
+
+.modal-close-button::after{
+  content: '';
+position: absolute;
+top: 15px;
+right: 15px;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+width: 20px;
+height: 5px;
+background: #ee3643;
+border: none;
+cursor: pointer;
+transform: rotate(45deg);
 }
 
 .button:hover,
