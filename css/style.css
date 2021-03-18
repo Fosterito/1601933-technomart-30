@@ -177,6 +177,7 @@ img {
   padding: 9px 26px 9px 49px;
   text-decoration: none;
   color: var(--basic-white);
+  background: var(--focus-nav);
   border: 0;
   outline: 0;
 }
@@ -307,8 +308,6 @@ img {
   line-height: 21px;
   background-color: var(--basic-white);
   padding: 12px 57px 12px 56px;
-  border: none;
-  outline: none;
 }
 
 .login-out::before {
@@ -362,14 +361,10 @@ img {
 }
 
 .user-order {
-  border: none;
-  outline: none;
   color: var(--address);
 }
 
 .user-profile {
-  border: none;
-  outline: none;
   color: var(--address);
   margin-left: 28px;
 }
@@ -393,8 +388,6 @@ img {
   padding: 12px 27px 12px 45px;
   background-color: var(--basic-white);
   margin-right: 10px;
-  border: none;
-  outline: none;
 }
 
 .login:hover,
@@ -432,8 +425,6 @@ img {
 .register {
   padding: 12px 24px;
   background-color: var(--basic-white);
-  border: none;
-  outline: none;
 }
 
 .user-navigation a {
@@ -562,8 +553,6 @@ img {
   padding: 10px 0 10px 0;
   background: rgba(255, 255, 255, 0.3);
   color: var(--basic-white);
-  border: none;
-  outline: none;
 }
 
 .catalog-button:hover {
@@ -995,6 +984,12 @@ img {
   outline: none;
 }
 
+.button-modal-map {
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
 /*Footer*/
 .background-footer {
   background-color: var(--address);
@@ -1181,15 +1176,21 @@ img {
 }
 
 .modal-catalog {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 620px;
+  height: 282px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  background-color: var(--basic-white);
+}
+
+.modal-catalog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 620px;
   height: 282px;
   background-color: var(--basic-white);
