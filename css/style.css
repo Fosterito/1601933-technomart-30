@@ -1623,6 +1623,7 @@ img {
 .filter-input-radio+label::before {
   content: '';
   display: inline-block;
+  vertical-align: top;
   padding-right: 10px;
   width: 25px;
   height: 25px;
@@ -1643,6 +1644,7 @@ img {
 .filter-input-checkbox+label::before {
   content: '';
   display: inline-block;
+  vertical-align: top;
   padding-right: 10px;
   width: 25px;
   height: 25px;
