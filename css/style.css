@@ -624,7 +624,6 @@ img {
   background-repeat: no-repeat;
 }
 
-
 .slide-button-back {
   margin-left: 24px;
 }
@@ -907,11 +906,10 @@ img {
 .section-about {
   padding-top: 64px;
   padding-bottom: 99px;
-  background: url("../img/layer131-1.svg");
+  background: url("../img/buss.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
-
 
 .about-item-service {
   padding-bottom: 70px;
