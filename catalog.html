@@ -20,7 +20,7 @@
     <div class="nav-up">
       <a class="main-logo" href="index.html"><img src="img/main-logo.svg" width="220" height="47" alt="Логотип Техномарт"></a>
       <input class="search" type="search" id="search" placeholder="Поиск:">
-      <label class="visually-hidden" for="search"></label>
+      <label class="visually-hidden" for="search">Поиск</label>
       <a class="bookmarks" href="#">Закладки: 0</a>
       <a class="basket active-basket" href="#">Корзина: 10</a>
       <a class="ordering" href="#">Оформить заказ</a>
@@ -83,10 +83,10 @@
             </div>
             <div class="input-price">
               <input class="input-class" name="min-price" id="price-min" type="number" value="0">
-              <label for="price-min"></label>
+              <label class="visually-hidden" for="price-min">Минимальная цена</label>
               <span>-</span>
               <input class="input-class" name="max-price" type="number" id="price-max" value="3000">
-              <label for="price-max"></label>
+              <label class="visually-hidden" for="price-max">Максимальная цена</label>
             </div>
           </fieldset>
           <fieldset class="form">
@@ -133,16 +133,16 @@
         <div class="sorting">
           <p class="drill-title-sotring">Сортировка:</p>
           <ul class="filter-buttons-list">
-            <li><button class="filter-button filter-button-active">По цене</button></li>
-            <li><button class="filter-button">По типу</button></li>
-            <li><button class="filter-button">По функционалу</button></li>
+            <li><button class="filter-button filter-button-active" type="button">По цене</button></li>
+            <li><button class="filter-button" type="button">По типу</button></li>
+            <li><button class="filter-button" type="button">По функционалу</button></li>
           </ul>
           <ul class="sorting-button-list">
-            <li><button class="sorting-button-up sorting-button-active"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li><button class="sorting-button-up sorting-button-active" type="button" aria-label="Кнопка сортировки"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5" />
                 </svg></button>
             </li>
-            <li><button class="sorting-button-down"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <li><button class="sorting-button-down" type="button" aria-label="Кнопка сортировки"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.66241 10L0.162415 0H11.1624" fill="#C5C5C5" />
                 </svg></button></li>
           </ul>
@@ -150,100 +150,100 @@
         <ul class="drill-list-catalog">
           <li class="drill-item">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size">
               <img class="drill-img" src="img/perfor3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
-            <button class="buy-button">25500 Р.</button>
+            <button class="buy-button" type="button">25500 Р.</button>
           </li>
           <li class="drill-item">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
-            <button class="buy-button">25500 Р.</button>
+            <button class="buy-button" type="button">25500 Р.</button>
           </li>
           <li class="drill-item new-product">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">32500 Р.</span>
-            <button class="buy-button">25500 Р.</button>
+            <button class="buy-button" type="button">25500 Р.</button>
           </li>
           <li class="drill-item new-product">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
-            <button class="buy-button">15500 Р.</button>
+            <button class="buy-button" type="button">15500 Р.</button>
           </li>
           <li class="drill-item">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
-            <button class="buy-button">25500 Р.</button>
+            <button class="buy-button" type="button">25500 Р.</button>
           </li>
           <li class="drill-item new-product">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 2000</h3>
-            <button class="buy-button">12500 Р.</button>
+            <button class="buy-button" type="button">12500 Р.</button>
           </li>
           <li class="drill-item new-product">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 3000</h3>
             <span class="old-price">22500 Р.</span>
-            <button class="buy-button">15500 Р.</button>
+            <button class="buy-button" type="button">15500 Р.</button>
           </li>
           <li class="drill-item">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 6000</h3>
             <span class="old-price">30500 Р.</span>
-            <button class="buy-button">25500 Р.</button>
+            <button class="buy-button" type="button">25500 Р.</button>
           </li>
           <li class="drill-item new-product">
             <div class="drill-action">
-              <button class="buy-drill">Купить</button>
-              <button class="mark-drill">В закладку</button>
+              <button class="buy-drill" type="button">Купить</button>
+              <button class="mark-drill" type="button">В закладку</button>
             </div>
             <p class="drill-size"><img class="drill-img" src="img/perfor2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"></p>
             <h3 class="drill-title">Перфоратор BOSCH BFG 2000</h3>
-            <button class="buy-button">25500 Р.</button>
+            <button class="buy-button" type="button">25500 Р.</button>
           </li>
         </ul>
         <ul class="pagination">
-          <li><button class="pagination-button pagination-active">1</button></li>
-          <li><button class="pagination-button">2</button></li>
-          <li><button class="pagination-button">3</button></li>
-          <li><button class="pagination-button">СЛЕДУЮЩАЯ</button></li>
+          <li><button class="pagination-button pagination-active" type="button">1</button></li>
+          <li><button class="pagination-button" type="button">2</button></li>
+          <li><button class="pagination-button" type="button">3</button></li>
+          <li><button class="pagination-button" type="button">СЛЕДУЮЩАЯ</button></li>
         </ul>
       </div>
     </div>
@@ -339,10 +339,10 @@
   <section class="modal-catalog" hidden>
     <h2 class="modal-title">Товар добавлен в корзину!</h2>
     <div class="modal-catalog-container">
-      <button class="modal-close-button" type="button"></button>
+      <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
       <div class="modal-button-catalog-list">
-        <button class="modal-button-catalog">Оформить заказ</button>
-        <button class="modal-button-catalog">Продолжить покупки</button>
+        <button class="modal-button-catalog" type="button">Оформить заказ</button>
+        <button class="modal-button-catalog" type="button">Продолжить покупки</button>
       </div>
     </div>
   </section>

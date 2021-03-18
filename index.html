@@ -75,13 +75,11 @@
               <h2 class="title-popular">Перфораторы</h2>
               <span class="color-staff">Настоящие мужские игрушки</span>
             </div>
-            <button class="button-arrow button-arrow-left" type="button" disabled></button>
+            <button class="button-arrow button-arrow-left" type="button"></button>
             <button class="button-arrow button-arrow-right" type="button"></button>
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
             <div class="slider-controls">
-              <button class="button-slide button-slide-active" type="button"></button>
-              <button class="button-slide" type="button"></button>
+              <button class="button-slide button-slide-active" type="button" aria-label="Слайд назад"></button>
+              <button class="button-slide" type="button" aria-label="Слайд вперед"></button>
             </div>
             <a class="button slider-catalog-button" href="catalog.html">Открыть каталог</a>
           </li>
@@ -213,7 +211,7 @@
           <h2 class="title">Контакты</h2>
           <p class="about-item">Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-          <button class="button-modal-map" type="button"><img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></button>
+          <button class="button-modal-map" type="button" aria-label="Карта"><img src="img/map.jpg" width="300" height="158" alt="Большая Конюшенная ул., 19"></button>
           <button class="button button-map" type="button">Заблудились? напишите нам</button>
         </div>
       </section>
@@ -301,7 +299,7 @@
   <section class="modal" hidden>
     <h2 class="visually-hidden">Модальное окно</h2>
     <form class="feedback-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
-      <button class="modal-close-button" type="button"></button>
+      <button class="modal-close-button" type="button" aria-label="Закрыть"></button>
       <div class="modal-wrapper">
         <div class="input-form">
           <div class="input-name">
