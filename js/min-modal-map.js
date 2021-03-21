@@ -1,0 +1,1 @@
+const btnMapModal=document.getElementById("btn-map-modal"),modalMapModal=document.getElementById("modal-map"),modalCloseMap=document.getElementById("modal-close-btn-map");btnMapModal.addEventListener("click",()=>{modalMapModal.style.display="block"}),modalCloseMap.addEventListener("click",()=>{modalMapModal.style.display="none"});

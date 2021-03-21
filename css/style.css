@@ -59,7 +59,7 @@ img {
   text-transform: uppercase;
 }
 
-.title-tips{
+.title-tips {
   padding: 0;
   margin: 0;
   padding-bottom: 24px;
@@ -438,11 +438,11 @@ img {
   color: var(--basic-white);
 }
 
-.nav-button-first{
+.nav-button-first {
   margin-left: 15px;
 }
 
-.nav-button-last{
+.nav-button-last {
   margin-right: 15px;
 }
 
