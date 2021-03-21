@@ -59,6 +59,12 @@ img {
   text-transform: uppercase;
 }
 
+.title-tips{
+  padding: 0;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
 .wrapper {
   width: 940px;
   margin-left: auto;
@@ -419,7 +425,7 @@ img {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -428,8 +434,16 @@ img {
 
 .nav-button {
   display: block;
-  padding: 16px 24px 20px 27px;
+  padding: 16px 25px 20px 25px;
   color: var(--basic-white);
+}
+
+.nav-button-first{
+  margin-left: 15px;
+}
+
+.nav-button-last{
+  margin-right: 15px;
 }
 
 .nav-button:hover, .nav-button:focus {
@@ -788,10 +802,10 @@ img {
   padding-left: 80px;
 }
 
-.service-title {
+.service-title-tips {
   padding: 0;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-size: 30px;
   line-height: 30px;
   color: var(--address);
