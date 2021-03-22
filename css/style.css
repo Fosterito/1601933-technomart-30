@@ -472,6 +472,7 @@ img {
 }
 
 .catalog-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -536,13 +537,15 @@ img {
 }
 
 .catalog-button {
+  position: absolute;
+  bottom: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 135px;
   font-size: 14px;
+  padding: 10px 0;
   line-height: 18px;
-  padding: 10px 0 10px 0;
   background: rgba(255, 255, 255, 0.3);
   color: var(--basic-white);
 }
@@ -786,7 +789,7 @@ img {
   min-height: 61px;
   min-width: 240px;
   border: none;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069,-37px 0px 17px -20px rgba(0, 0, 0, 0.28) inset;
 }
 
 .button-toogle:hover, .button-toogle:focus {
@@ -799,7 +802,11 @@ img {
 }
 
 .title-deliv {
+  z-index: inherit;
+  padding-top: 45px;
+  padding-bottom: 49px;
   padding-left: 80px;
+  box-shadow: -28px 0px 17px -20px rgba(0, 0, 0, 0.28);
 }
 
 .service-title-tips {
@@ -908,29 +915,26 @@ img {
 
 .section-about {
   padding-top: 64px;
-  padding-bottom: 99px;
-  background: url("../img/buss.svg");
+  padding-bottom: 99px;background: url("../img/buss.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom 20px;
 }
 
 .about-item-service {
-  padding-bottom: 70px;
+margin-bottom: 20px;
 }
 
 .section-down {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-repeat: no-repeat;
-  background-position: right;
 }
 
 .button-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  box-shadow: -14px -1px 10px -7px rgba(0, 0, 0, 0.2) inset;
+  margin-top: 40px;
 }
 
 .section-about-second {
@@ -1607,6 +1611,11 @@ img {
   -moz-appearance: none;
   appearance: none;
   margin: 0;
+
+}
+
+.input-price input[type=number] {
+  -moz-appearance:textfield;
 }
 
 .firms-check-list {
